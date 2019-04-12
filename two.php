@@ -1,5 +1,7 @@
 <?php
 
+//算法------水仙花
+
 new Two;
 
 class Two{
