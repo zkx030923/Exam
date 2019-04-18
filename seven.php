@@ -9,7 +9,7 @@ class seven{
 
     public function index($parm=''){
 
-        for($i=0;$i<=$parm;$i++){
+        for($i=1;$i<=$parm;$i++){
 
             $arr[]=$i;
             $num=$i;
@@ -29,7 +29,7 @@ class seven{
                 $num=$num/5;
 
             }
-            if($num != 0){
+            if($num != 1){
 
                 array_pop($arr);
 
