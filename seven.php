@@ -31,7 +31,7 @@ class seven{
             }
             if($num != 0){
 
-                $arr[]=$num;
+                array_pop($arr);
 
             }
 
