@@ -3,36 +3,27 @@
 class eighteen{
 
     public function __construct(){
-
-        $res=$this->NumberOf1(10);
+        $res = $this->NumberOf1(10);
         var_dump($res);
-
     }
-
-    public function NumberOf1($parm=''){
-
-        $res='';
-        $num=0;
-
-        while (1) {
+    public function NumberOf1($param = 0){
+        header("Content-type:text/html;charset=utf-8");
+        $res = '';
+        $nums = 0;
+        while(1){
             
-            $yu=$parm%2;
-
-            if($yu==1){
-                $num=$num+1;
-            }
-
-            $pram=floor($parm/2);
-
-            $res.=$yu;
-
-            if($parm==0){
-                return $num;
+            $yu = $param % 2;
+            if($yu == 1){$nums = $nums + 1;}
+            
+            $param = floor($param / 2);
+            
+            $res .= $yu;
+            if($param == 0){
+                return $nums;
             }
         }
-
-
     }
 
 
 }
+new eighteen();
